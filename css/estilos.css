@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono&family=Ubuntu:wght@700&display=swap');*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+/*Acá arrancan estilos generales*/
+.cuerpo{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.986);
+}
+
+.encabezado{
+    background-color: rgba(107, 103, 103, 0.908);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.navegador{
+    display: flex;
+    justify-content: flex-end;
+    min-width:60vw;
+    padding-right: 3%;
+    align-items: center;
+}
+
+.anclaNav{
+    text-decoration: none;
+    color:aliceblue;
+    margin: 1%;
+}
+
+.anclaLogo{
+    margin: 1%;
+    display: flex;
+    justify-content:flex-start;
+}
+
+.pie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(119, 113, 113, 0.815);
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+} 
+
+
+/*Acá arranca los estilos del Index*/
+.paginaPrincipal{
+        background-image: url(/assets/parejaFitness.jpg);
+        background-size:cover;
+}
+
+#encabezadoPrincipal{
+    background-color: rgba(0, 0, 0, 0.447);
+}
+
+#parrafoPrincipal{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 15%;
+    color: aliceblue;
+    stroke: black;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 900%;
+}
+
+
+
+/*Acá arranca la sección productos*/
+.cuerpoProductos{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "header"
+                         "productos"
+                         "footer";
+    grid-template-rows: auto;
+    
+}
+
+.productosPrincipal{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    display: flex;
+    align-items: center;
+    gap:1%;
+}
+
+.productos{
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tituloProductos{
+    color: white;
+}
+
+.parrafoProducto{
+    color: white;
+}
+
+/*Acá arranca la sección instalaciones*/
+
+.cuerpoInstalaciones{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "header"
+                         "instalaciones"
+                         "footer";
+}
+
+.principalInstalaciones{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    gap: 2%;
+    margin: 2%;
+}
+
+/*Acá arranca la sección Nosotros*/
+
+.principalNosotros{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nosotrosSeccion2{
+    color: white;
+    display: flex;
+    align-items: flex-start;
+}
+
+.nosotrosSeccion{
+    display: flex;
+    align-items: flex-end;
+}
